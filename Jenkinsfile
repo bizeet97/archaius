@@ -7,7 +7,7 @@ pipeline{
       stage ('Build and Test')
         {
             steps{
-                    sh "mvn clean install -DskipTests"
+                    sh './gradlew clean install'
             }
         }
          
